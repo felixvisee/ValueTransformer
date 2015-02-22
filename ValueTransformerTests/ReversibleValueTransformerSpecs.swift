@@ -136,7 +136,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
             }
 
             context("with optional transformed value") {
-                let valueTransformer: ReversibleValueTransformer<String, Int?, NSError> = lift(ReversibleValueTransformers.string, defaultValue: "zero")
+                let valueTransformer: ReversibleValueTransformer<String, Int?, NSError> = lift(ReversibleValueTransformers.string, defaultReverseTransformedValue: "zero")
 
                 it("should transform a value") {
                     let result = valueTransformer.transform("7")

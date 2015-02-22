@@ -58,8 +58,8 @@ public func <<< <V: ReversibleValueTransformerType, W: ReversibleValueTransforme
 
 // MARK: - Lift (Optional)
 
-public func lift<V: ReversibleValueTransformerType>(reversibleValueTransformer: V, #defaultValue: V.ValueType) -> ReversibleValueTransformer<V.ValueType, V.TransformedValueType?, V.ErrorType> {
-    return combine(lift(reversibleValueTransformer) as ValueTransformer, lift(flip(reversibleValueTransformer), defaultTransformedValue: defaultValue) as ValueTransformer)
+public func lift<V: ReversibleValueTransformerType>(reversibleValueTransformer: V, #defaultReverseTransformedValue: V.ValueType) -> ReversibleValueTransformer<V.ValueType, V.TransformedValueType?, V.ErrorType> {
+    return combine(lift(reversibleValueTransformer) as ValueTransformer, lift(flip(reversibleValueTransformer), defaultTransformedValue: defaultReverseTransformedValue) as ValueTransformer)
 }
 
 public func lift<V: ReversibleValueTransformerType>(reversibleValueTransformer: V, #defaultTransformedValue: V.TransformedValueType) -> ReversibleValueTransformer<V.ValueType?, V.TransformedValueType, V.ErrorType> {

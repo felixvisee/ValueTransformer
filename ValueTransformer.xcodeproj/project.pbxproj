@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC354FE81A952707009ACCFF /* ValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = DC354FE71A952707009ACCFF /* ValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC354FEE1A952707009ACCFF /* ValueTransformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC354FE21A952707009ACCFF /* ValueTransformer.framework */; };
+		DC354FF51A952707009ACCFF /* ValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC354FF41A952707009ACCFF /* ValueTransformerSpecs.swift */; };
+		DC35501D1A95277E009ACCFF /* ValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35501C1A95277E009ACCFF /* ValueTransformer.swift */; };
+		DC35501E1A95277E009ACCFF /* ValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35501C1A95277E009ACCFF /* ValueTransformer.swift */; };
+		DC35501F1A952784009ACCFF /* ValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = DC354FE71A952707009ACCFF /* ValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC3550211A95294A009ACCFF /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3550201A95294A009ACCFF /* LlamaKit.framework */; };
+		DC3550281A952ADF009ACCFF /* ReversibleValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3550271A952ADF009ACCFF /* ReversibleValueTransformer.swift */; };
+		DC3550291A952ADF009ACCFF /* ReversibleValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3550271A952ADF009ACCFF /* ReversibleValueTransformer.swift */; };
+		DC35502B1A952B12009ACCFF /* ValueTransformerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35502A1A952B12009ACCFF /* ValueTransformerType.swift */; };
+		DC35502C1A952B12009ACCFF /* ValueTransformerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35502A1A952B12009ACCFF /* ValueTransformerType.swift */; };
+		DC35502E1A952B85009ACCFF /* ReversibleValueTransformerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35502D1A952B85009ACCFF /* ReversibleValueTransformerType.swift */; };
+		DC35502F1A952B85009ACCFF /* ReversibleValueTransformerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35502D1A952B85009ACCFF /* ReversibleValueTransformerType.swift */; };
+		DC3550321A95333A009ACCFF /* ValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC354FF41A952707009ACCFF /* ValueTransformerSpecs.swift */; };
+		DC6CC0271A97C0F00082E51E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0261A97C0F00082E51E /* Utils.swift */; };
+		DC6CC0281A97C0F00082E51E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0261A97C0F00082E51E /* Utils.swift */; };
+		DC6CC02A1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */; };
+		DC6CC02B1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */; };
+		DC9A894F1A9535E0003C48B1 /* ValueTransformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3550031A952732009ACCFF /* ValueTransformer.framework */; };
+		DCF63D261A953681005E6C21 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3550221A952955009ACCFF /* LlamaKit.framework */; };
+		DCF63D2C1A95382C005E6C21 /* LlamaKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC3550221A952955009ACCFF /* LlamaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCF63D2E1A95390F005E6C21 /* LlamaKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC3550201A95294A009ACCFF /* LlamaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCF63D311A954365005E6C21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D2F1A954365005E6C21 /* Nimble.framework */; };
+		DCF63D321A954365005E6C21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D301A954365005E6C21 /* Quick.framework */; };
+		DCF63D351A954389005E6C21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D331A954389005E6C21 /* Nimble.framework */; };
+		DCF63D361A954389005E6C21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D341A954389005E6C21 /* Quick.framework */; };
+		DCF63D391A9543EC005E6C21 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCF63D341A954389005E6C21 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCF63D3A1A9543EC005E6C21 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCF63D331A954389005E6C21 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCF63D3B1A9543F5005E6C21 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCF63D301A954365005E6C21 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCF63D3C1A9543F5005E6C21 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCF63D2F1A954365005E6C21 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC354FEF1A952707009ACCFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC354FD91A952707009ACCFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC354FE11A952707009ACCFF;
+			remoteInfo = ValueTransformer;
+		};
+		DC9A894D1A9535AC003C48B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC354FD91A952707009ACCFF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC3550021A952732009ACCFF;
+			remoteInfo = "ValueTransformer-Mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCF63D2B1A95381F005E6C21 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DCF63D391A9543EC005E6C21 /* Quick.framework in CopyFiles */,
+				DCF63D3A1A9543EC005E6C21 /* Nimble.framework in CopyFiles */,
+				DCF63D2C1A95382C005E6C21 /* LlamaKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF63D2D1A953906005E6C21 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DCF63D3B1A9543F5005E6C21 /* Quick.framework in CopyFiles */,
+				DCF63D3C1A9543F5005E6C21 /* Nimble.framework in CopyFiles */,
+				DCF63D2E1A95390F005E6C21 /* LlamaKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DC354FE21A952707009ACCFF /* ValueTransformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValueTransformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC354FE61A952707009ACCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC354FE71A952707009ACCFF /* ValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValueTransformer.h; sourceTree = "<group>"; };
+		DC354FED1A952707009ACCFF /* ValueTransformer-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ValueTransformer-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC354FF31A952707009ACCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC354FF41A952707009ACCFF /* ValueTransformerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueTransformerSpecs.swift; sourceTree = "<group>"; };
+		DC3550031A952732009ACCFF /* ValueTransformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValueTransformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC35500D1A952732009ACCFF /* ValueTransformer-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ValueTransformer-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC35501C1A95277E009ACCFF /* ValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueTransformer.swift; sourceTree = "<group>"; };
+		DC3550201A95294A009ACCFF /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = Carthage/Build/iOS/LlamaKit.framework; sourceTree = "<group>"; };
+		DC3550221A952955009ACCFF /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = Carthage/Build/Mac/LlamaKit.framework; sourceTree = "<group>"; };
+		DC3550271A952ADF009ACCFF /* ReversibleValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleValueTransformer.swift; sourceTree = "<group>"; };
+		DC35502A1A952B12009ACCFF /* ValueTransformerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueTransformerType.swift; sourceTree = "<group>"; };
+		DC35502D1A952B85009ACCFF /* ReversibleValueTransformerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleValueTransformerType.swift; sourceTree = "<group>"; };
+		DC6CC0261A97C0F00082E51E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleValueTransformerSpecs.swift; sourceTree = "<group>"; };
+		DCF63D2F1A954365005E6C21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		DCF63D301A954365005E6C21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		DCF63D331A954389005E6C21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		DCF63D341A954389005E6C21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC354FDE1A952707009ACCFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3550211A95294A009ACCFF /* LlamaKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC354FEA1A952707009ACCFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF63D321A954365005E6C21 /* Quick.framework in Frameworks */,
+				DCF63D311A954365005E6C21 /* Nimble.framework in Frameworks */,
+				DC354FEE1A952707009ACCFF /* ValueTransformer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC354FFF1A952732009ACCFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF63D261A953681005E6C21 /* LlamaKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC35500A1A952732009ACCFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF63D361A954389005E6C21 /* Quick.framework in Frameworks */,
+				DCF63D351A954389005E6C21 /* Nimble.framework in Frameworks */,
+				DC9A894F1A9535E0003C48B1 /* ValueTransformer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC354FD81A952707009ACCFF = {
+			isa = PBXGroup;
+			children = (
+				DC354FE41A952707009ACCFF /* ValueTransformer */,
+				DC354FF11A952707009ACCFF /* ValueTransformerTests */,
+				DC3550241A952964009ACCFF /* Frameworks */,
+				DC354FE31A952707009ACCFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC354FE31A952707009ACCFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC354FE21A952707009ACCFF /* ValueTransformer.framework */,
+				DC354FED1A952707009ACCFF /* ValueTransformer-iOSTests.xctest */,
+				DC3550031A952732009ACCFF /* ValueTransformer.framework */,
+				DC35500D1A952732009ACCFF /* ValueTransformer-MacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC354FE41A952707009ACCFF /* ValueTransformer */ = {
+			isa = PBXGroup;
+			children = (
+				DC3550271A952ADF009ACCFF /* ReversibleValueTransformer.swift */,
+				DC35502D1A952B85009ACCFF /* ReversibleValueTransformerType.swift */,
+				DC6CC0261A97C0F00082E51E /* Utils.swift */,
+				DC354FE71A952707009ACCFF /* ValueTransformer.h */,
+				DC35501C1A95277E009ACCFF /* ValueTransformer.swift */,
+				DC35502A1A952B12009ACCFF /* ValueTransformerType.swift */,
+				DC354FE51A952707009ACCFF /* Supporting Files */,
+			);
+			path = ValueTransformer;
+			sourceTree = "<group>";
+		};
+		DC354FE51A952707009ACCFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC354FE61A952707009ACCFF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC354FF11A952707009ACCFF /* ValueTransformerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */,
+				DC354FF41A952707009ACCFF /* ValueTransformerSpecs.swift */,
+				DC354FF21A952707009ACCFF /* Supporting Files */,
+			);
+			path = ValueTransformerTests;
+			sourceTree = "<group>";
+		};
+		DC354FF21A952707009ACCFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC354FF31A952707009ACCFF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC3550241A952964009ACCFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC3550261A952970009ACCFF /* iOS */,
+				DC3550251A95296A009ACCFF /* Mac */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC3550251A95296A009ACCFF /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				DCF63D341A954389005E6C21 /* Quick.framework */,
+				DCF63D331A954389005E6C21 /* Nimble.framework */,
+				DC3550221A952955009ACCFF /* LlamaKit.framework */,
+			);
+			name = Mac;
+			sourceTree = "<group>";
+		};
+		DC3550261A952970009ACCFF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DCF63D301A954365005E6C21 /* Quick.framework */,
+				DCF63D2F1A954365005E6C21 /* Nimble.framework */,
+				DC3550201A95294A009ACCFF /* LlamaKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DC354FDF1A952707009ACCFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC354FE81A952707009ACCFF /* ValueTransformer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3550001A952732009ACCFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC35501F1A952784009ACCFF /* ValueTransformer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DC354FE11A952707009ACCFF /* ValueTransformer-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC354FF81A952707009ACCFF /* Build configuration list for PBXNativeTarget "ValueTransformer-iOS" */;
+			buildPhases = (
+				DC354FDD1A952707009ACCFF /* Sources */,
+				DC354FDE1A952707009ACCFF /* Frameworks */,
+				DC354FDF1A952707009ACCFF /* Headers */,
+				DC354FE01A952707009ACCFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ValueTransformer-iOS";
+			productName = ValueTransformer;
+			productReference = DC354FE21A952707009ACCFF /* ValueTransformer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC354FEC1A952707009ACCFF /* ValueTransformer-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC354FFB1A952707009ACCFF /* Build configuration list for PBXNativeTarget "ValueTransformer-iOSTests" */;
+			buildPhases = (
+				DC354FE91A952707009ACCFF /* Sources */,
+				DC354FEA1A952707009ACCFF /* Frameworks */,
+				DC354FEB1A952707009ACCFF /* Resources */,
+				DCF63D2D1A953906005E6C21 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC354FF01A952707009ACCFF /* PBXTargetDependency */,
+			);
+			name = "ValueTransformer-iOSTests";
+			productName = ValueTransformerTests;
+			productReference = DC354FED1A952707009ACCFF /* ValueTransformer-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC3550021A952732009ACCFF /* ValueTransformer-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3550161A952732009ACCFF /* Build configuration list for PBXNativeTarget "ValueTransformer-Mac" */;
+			buildPhases = (
+				DC354FFE1A952732009ACCFF /* Sources */,
+				DC354FFF1A952732009ACCFF /* Frameworks */,
+				DC3550001A952732009ACCFF /* Headers */,
+				DC3550011A952732009ACCFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ValueTransformer-Mac";
+			productName = ValueTransformer;
+			productReference = DC3550031A952732009ACCFF /* ValueTransformer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC35500C1A952732009ACCFF /* ValueTransformer-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3550191A952732009ACCFF /* Build configuration list for PBXNativeTarget "ValueTransformer-MacTests" */;
+			buildPhases = (
+				DC3550091A952732009ACCFF /* Sources */,
+				DC35500A1A952732009ACCFF /* Frameworks */,
+				DC35500B1A952732009ACCFF /* Resources */,
+				DCF63D2B1A95381F005E6C21 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC9A894E1A9535AC003C48B1 /* PBXTargetDependency */,
+			);
+			name = "ValueTransformer-MacTests";
+			productName = ValueTransformerTests;
+			productReference = DC35500D1A952732009ACCFF /* ValueTransformer-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC354FD91A952707009ACCFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Felix Jendrusch";
+				TargetAttributes = {
+					DC354FE11A952707009ACCFF = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DC354FEC1A952707009ACCFF = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DC3550021A952732009ACCFF = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DC35500C1A952732009ACCFF = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DC354FDC1A952707009ACCFF /* Build configuration list for PBXProject "ValueTransformer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC354FD81A952707009ACCFF;
+			productRefGroup = DC354FE31A952707009ACCFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC354FE11A952707009ACCFF /* ValueTransformer-iOS */,
+				DC354FEC1A952707009ACCFF /* ValueTransformer-iOSTests */,
+				DC3550021A952732009ACCFF /* ValueTransformer-Mac */,
+				DC35500C1A952732009ACCFF /* ValueTransformer-MacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC354FE01A952707009ACCFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC354FEB1A952707009ACCFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3550011A952732009ACCFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC35500B1A952732009ACCFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC354FDD1A952707009ACCFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6CC0271A97C0F00082E51E /* Utils.swift in Sources */,
+				DC35502E1A952B85009ACCFF /* ReversibleValueTransformerType.swift in Sources */,
+				DC3550281A952ADF009ACCFF /* ReversibleValueTransformer.swift in Sources */,
+				DC35502B1A952B12009ACCFF /* ValueTransformerType.swift in Sources */,
+				DC35501D1A95277E009ACCFF /* ValueTransformer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC354FE91A952707009ACCFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC354FF51A952707009ACCFF /* ValueTransformerSpecs.swift in Sources */,
+				DC6CC02A1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC354FFE1A952732009ACCFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6CC0281A97C0F00082E51E /* Utils.swift in Sources */,
+				DC35502F1A952B85009ACCFF /* ReversibleValueTransformerType.swift in Sources */,
+				DC3550291A952ADF009ACCFF /* ReversibleValueTransformer.swift in Sources */,
+				DC35502C1A952B12009ACCFF /* ValueTransformerType.swift in Sources */,
+				DC35501E1A95277E009ACCFF /* ValueTransformer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3550091A952732009ACCFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3550321A95333A009ACCFF /* ValueTransformerSpecs.swift in Sources */,
+				DC6CC02B1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC354FF01A952707009ACCFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC354FE11A952707009ACCFF /* ValueTransformer-iOS */;
+			targetProxy = DC354FEF1A952707009ACCFF /* PBXContainerItemProxy */;
+		};
+		DC9A894E1A9535AC003C48B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC3550021A952732009ACCFF /* ValueTransformer-Mac */;
+			targetProxy = DC9A894D1A9535AC003C48B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DC354FF61A952707009ACCFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC354FF71A952707009ACCFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC354FF91A952707009ACCFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ValueTransformer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC354FFA1A952707009ACCFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ValueTransformer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(inherited)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DC354FFC1A952707009ACCFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ValueTransformerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC354FFD1A952707009ACCFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ValueTransformerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC3550171A952732009ACCFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ValueTransformer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(inherited)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC3550181A952732009ACCFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ValueTransformer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(inherited)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DC35501A1A952732009ACCFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ValueTransformerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DC35501B1A952732009ACCFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = ValueTransformerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC354FDC1A952707009ACCFF /* Build configuration list for PBXProject "ValueTransformer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC354FF61A952707009ACCFF /* Debug */,
+				DC354FF71A952707009ACCFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC354FF81A952707009ACCFF /* Build configuration list for PBXNativeTarget "ValueTransformer-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC354FF91A952707009ACCFF /* Debug */,
+				DC354FFA1A952707009ACCFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC354FFB1A952707009ACCFF /* Build configuration list for PBXNativeTarget "ValueTransformer-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC354FFC1A952707009ACCFF /* Debug */,
+				DC354FFD1A952707009ACCFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC3550161A952732009ACCFF /* Build configuration list for PBXNativeTarget "ValueTransformer-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3550171A952732009ACCFF /* Debug */,
+				DC3550181A952732009ACCFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC3550191A952732009ACCFF /* Build configuration list for PBXNativeTarget "ValueTransformer-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC35501A1A952732009ACCFF /* Debug */,
+				DC35501B1A952732009ACCFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC354FD91A952707009ACCFF /* Project object */;
+}

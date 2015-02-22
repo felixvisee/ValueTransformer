@@ -109,7 +109,7 @@ The same operations that can be applied to a `ValueTransformer` may also be appl
 
 Two suitable value transformers can be combined into a reversible value transformer:
 
-```
+```swift
 let lowercase = ValueTransformer<String, String, NSError> { value in
   return success(value.lowercaseString)
 }

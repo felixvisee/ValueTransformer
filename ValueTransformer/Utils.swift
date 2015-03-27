@@ -2,7 +2,7 @@
 
 import LlamaKit
 
-internal func pure<T>(x: T) -> T? {
+internal func unit<T>(x: T) -> T? {
     return .Some(x)
 }
 

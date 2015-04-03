@@ -62,7 +62,7 @@ class ValueTransformerSpecs: QuickSpec {
                     it("should transform a value") {
                         let result = valueTransformer.transform("4")
 
-                        expect(result.value?).to(equal(4))
+                        expect(result.value).to(equal(4))
                     }
 
                     it("should fail if its value transformation fails") {
@@ -76,7 +76,7 @@ class ValueTransformerSpecs: QuickSpec {
                     it("should transform to the default transformed value") {
                         let result = valueTransformer.transform(nil)
 
-                        expect(result.value?).to(equal(0))
+                        expect(result.value).to(equal(0))
                     }
                 }
             }
@@ -129,7 +129,7 @@ class ValueTransformerSpecs: QuickSpec {
                 it("should transform a value") {
                     let result = valueTransformer.transform([ "7", "8" ])
 
-                    expect(result.value?).to(equal([ 7, 8 ]))
+                    expect(result.value).to(equal([ 7, 8 ]))
                 }
 
                 it("should fail if any of its value transformation fails") {

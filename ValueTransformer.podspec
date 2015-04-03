@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ValueTransformer"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Type-safe value transformers with error handling"
   s.homepage     = "https://github.com/felixjendrusch/ValueTransformer"
   s.license      = "MIT"

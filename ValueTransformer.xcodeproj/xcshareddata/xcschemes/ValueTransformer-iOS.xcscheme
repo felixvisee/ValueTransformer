@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC354FEC1A952707009ACCFF"
-               BuildableName = "ValueTransformer-iOSTests.xctest"
+               BuildableName = "ValueTransformerTests.xctest"
                BlueprintName = "ValueTransformer-iOSTests"
                ReferencedContainer = "container:ValueTransformer.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC354FEC1A952707009ACCFF"
-               BuildableName = "ValueTransformer-iOSTests.xctest"
+               BuildableName = "ValueTransformerTests.xctest"
                BlueprintName = "ValueTransformer-iOSTests"
                ReferencedContainer = "container:ValueTransformer.xcodeproj">
             </BuildableReference>

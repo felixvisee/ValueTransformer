@@ -87,7 +87,7 @@ class ValueTransformerSpecs: QuickSpec {
                 it("should transform a value") {
                     let result = valueTransformer.transform("5")
 
-                    expect(result.value?).to(equal(5))
+                    expect(result.value!).to(equal(5))
                 }
 
                 it("should fail if its value transformation fails") {
@@ -104,7 +104,7 @@ class ValueTransformerSpecs: QuickSpec {
                     it("should transform a value") {
                         let result = valueTransformer.transform("6")
 
-                        expect(result.value?).to(equal(6))
+                        expect(result.value!).to(equal(6))
                     }
 
                     it("should fail if its value transformation fails") {
@@ -118,7 +118,7 @@ class ValueTransformerSpecs: QuickSpec {
                     it("should transform to nil") {
                         let result = valueTransformer.transform(nil)
 
-                        expect(result.value?).to(beNil())
+                        expect(result.value!).to(beNil())
                     }
                 }
             }

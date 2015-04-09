@@ -125,7 +125,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                 it("should reverse transform a value") {
                     let result = valueTransformer.reverseTransform(6)
 
-                    expect(result.value?).to(equal("6"))
+                    expect(result.value!).to(equal("6"))
                 }
 
                 it("should fail if its reverse value transformation fails") {
@@ -141,7 +141,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                 it("should transform a value") {
                     let result = valueTransformer.transform("7")
 
-                    expect(result.value?).to(equal(7))
+                    expect(result.value!).to(equal(7))
                 }
 
                 it("should fail if its value transformation fails") {
@@ -180,7 +180,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                     it("should transform a value") {
                         let result = valueTransformer.transform("9")
 
-                        expect(result.value?).to(equal(9))
+                        expect(result.value!).to(equal(9))
                     }
 
                     it("should fail if its value transformation fails") {
@@ -194,7 +194,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                     it("should transform to nil") {
                         let result = valueTransformer.transform(nil)
 
-                        expect(result.value?).to(beNil())
+                        expect(result.value!).to(beNil())
                     }
                 }
 
@@ -202,7 +202,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                     it("should reverse transform a value") {
                         let result = valueTransformer.reverseTransform(10)
 
-                        expect(result.value?).to(equal("10"))
+                        expect(result.value!).to(equal("10"))
                     }
 
                     it("should fail if its value transformation fails") {
@@ -216,7 +216,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                     it("should transform to nil") {
                         let result = valueTransformer.reverseTransform(nil)
 
-                        expect(result.value?).to(beNil())
+                        expect(result.value!).to(beNil())
                     }
                 }
             }

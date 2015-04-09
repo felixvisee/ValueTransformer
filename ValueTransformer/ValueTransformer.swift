@@ -65,11 +65,3 @@ public func lift<V: ValueTransformerType>(valueTransformer: V) -> ValueTransform
         return map(values, transform(valueTransformer))
     }
 }
-
-// MARK: - Lift (Dictionary)
-
-public func lift<Key: Hashable, Value, Error>(dictionary: [Key: Value], #defaultTransformedValue: Value) -> ValueTransformer<Key, Value, Error> {
-    return ValueTransformer { value in
-        return success(dictionary[value] ?? defaultTransformedValue)
-    }
-}

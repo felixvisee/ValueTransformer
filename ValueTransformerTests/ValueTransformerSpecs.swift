@@ -138,22 +138,6 @@ class ValueTransformerSpecs: QuickSpec {
                     expect(result.isSuccess).to(beFalse())
                 }
             }
-
-            context("with a dictionary") {
-                let valueTransformer: ValueTransformer<String, Int, NSError> = lift([ "ten": 10 ], defaultTransformedValue: 0)
-
-                it("should transform a value") {
-                    let result = valueTransformer.transform("ten")
-
-                    expect(result.value).to(equal(10))
-                }
-
-                it("should succeed with the default transformed value if the value is not mapped") {
-                    let result = valueTransformer.transform("eleven")
-
-                    expect(result.value).to(equal(0))
-                }
-            }
         }
     }
 }

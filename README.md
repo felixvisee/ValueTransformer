@@ -77,17 +77,6 @@ let lifted: ValueTransformer<[String], [String], NSError> = lift(uppercase)
 let result = lifted.transform([ "hello", "world" ]) // [ "HELLO", "WORLD" ]
 ```
 
-#### `lift` (Dictionary)
-
-A dictionary can be lifted into a value transformer too:
-
-```swift
-let lifted = lift([ "one": 1 ], defaultTransformedValue: 0)
-
-let result1 = lifted.transform("one") // 1
-let result2 = lifted.transform("two") // 0
-```
-
 ### `ReversibleValueTransformer`
 
 A `ReversibleValueTransformer` supports closure-based forward and backward value transformation. It conforms to `ReversibleValueTransformerType`, which in turn conforms to `ValueTransformerType`.

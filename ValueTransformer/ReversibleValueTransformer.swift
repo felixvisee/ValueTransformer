@@ -75,9 +75,3 @@ public func lift<V: ReversibleValueTransformerType>(reversibleValueTransformer: 
 public func lift<V: ReversibleValueTransformerType>(reversibleValueTransformer: V) -> ReversibleValueTransformer<[V.ValueType], [V.TransformedValueType], V.ErrorType> {
     return combine(lift(reversibleValueTransformer) as ValueTransformer, lift(flip(reversibleValueTransformer)) as ValueTransformer)
 }
-
-// MARK: - Lift (Dictionary)
-
-public func lift<Key: Hashable, Value: Hashable, Error>(dictionary: [Key: Value], #defaultTransformedValue: Value, #defaultReverseTransformedValue: Key) -> ReversibleValueTransformer<Key, Value, Error> {
-    return combine(lift(dictionary, defaultTransformedValue: defaultTransformedValue) as ValueTransformer, lift(reverse(dictionary), defaultTransformedValue: defaultReverseTransformedValue) as ValueTransformer)
-}

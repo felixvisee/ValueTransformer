@@ -248,34 +248,6 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                     expect(result.isSuccess).to(beFalse())
                 }
             }
-
-            context("with a dictionary") {
-                let valueTransformer: ReversibleValueTransformer<String, Int, NSError> = lift([ "fifteen": 15 ], defaultTransformedValue: 0, defaultReverseTransformedValue: "zero")
-                
-                it("should transform a value") {
-                    let result = valueTransformer.transform("fifteen")
-                    
-                    expect(result.value).to(equal(15))
-                }
-                
-                it("should succeed with the default transformed value if the value is not mapped") {
-                    let result = valueTransformer.transform("sixteen")
-                    
-                    expect(result.value).to(equal(0))
-                }
-
-                it("should reverse transform a value") {
-                    let result = valueTransformer.reverseTransform(15)
-
-                    expect(result.value).to(equal("fifteen"))
-                }
-
-                it("should succeed with the default reverse transformed value if the transformed value is not mapped") {
-                    let result = valueTransformer.reverseTransform(16)
-
-                    expect(result.value).to(equal("zero"))
-                }
-            }
         }
     }
 }

@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC2B03AD1AD7BE490000DBA2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03A91AD7BE490000DBA2 /* Result.framework */; };
+		DC2B03B11AD7BEFF0000DBA2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03A91AD7BE490000DBA2 /* Result.framework */; };
+		DC2B03B21AD7BF030000DBA2 /* Prelude.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03A81AD7BE490000DBA2 /* Prelude.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC2B03B31AD7BF030000DBA2 /* Box.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03A61AD7BE490000DBA2 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC2B03B41AD7BF030000DBA2 /* Either.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03A71AD7BE490000DBA2 /* Either.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC2B03B51AD7BF030000DBA2 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03A91AD7BE490000DBA2 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC2B03BD1AD7BF1D0000DBA2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03B91AD7BF1D0000DBA2 /* Result.framework */; };
+		DC2B03C11AD7BF330000DBA2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03B91AD7BF1D0000DBA2 /* Result.framework */; };
+		DC2B03C21AD7BF350000DBA2 /* Prelude.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03B81AD7BF1D0000DBA2 /* Prelude.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC2B03C31AD7BF350000DBA2 /* Box.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03B61AD7BF1D0000DBA2 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC2B03C41AD7BF350000DBA2 /* Either.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03B71AD7BF1D0000DBA2 /* Either.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DC2B03C51AD7BF350000DBA2 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03B91AD7BF1D0000DBA2 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC354FE81A952707009ACCFF /* ValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = DC354FE71A952707009ACCFF /* ValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC354FEE1A952707009ACCFF /* ValueTransformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC354FE21A952707009ACCFF /* ValueTransformer.framework */; };
 		DC354FF51A952707009ACCFF /* ValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC354FF41A952707009ACCFF /* ValueTransformerSpecs.swift */; };
 		DC35501D1A95277E009ACCFF /* ValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35501C1A95277E009ACCFF /* ValueTransformer.swift */; };
 		DC35501E1A95277E009ACCFF /* ValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35501C1A95277E009ACCFF /* ValueTransformer.swift */; };
 		DC35501F1A952784009ACCFF /* ValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = DC354FE71A952707009ACCFF /* ValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC3550211A95294A009ACCFF /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3550201A95294A009ACCFF /* LlamaKit.framework */; };
 		DC3550281A952ADF009ACCFF /* ReversibleValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3550271A952ADF009ACCFF /* ReversibleValueTransformer.swift */; };
 		DC3550291A952ADF009ACCFF /* ReversibleValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3550271A952ADF009ACCFF /* ReversibleValueTransformer.swift */; };
 		DC35502B1A952B12009ACCFF /* ValueTransformerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35502A1A952B12009ACCFF /* ValueTransformerType.swift */; };
@@ -26,9 +37,6 @@
 		DC6CC02A1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */; };
 		DC6CC02B1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */; };
 		DC9A894F1A9535E0003C48B1 /* ValueTransformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3550031A952732009ACCFF /* ValueTransformer.framework */; };
-		DCF63D261A953681005E6C21 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3550221A952955009ACCFF /* LlamaKit.framework */; };
-		DCF63D2C1A95382C005E6C21 /* LlamaKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC3550221A952955009ACCFF /* LlamaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DCF63D2E1A95390F005E6C21 /* LlamaKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC3550201A95294A009ACCFF /* LlamaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCF63D311A954365005E6C21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D2F1A954365005E6C21 /* Nimble.framework */; };
 		DCF63D321A954365005E6C21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D301A954365005E6C21 /* Quick.framework */; };
 		DCF63D351A954389005E6C21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D331A954389005E6C21 /* Nimble.framework */; };
@@ -65,7 +73,10 @@
 			files = (
 				DCF63D391A9543EC005E6C21 /* Quick.framework in CopyFiles */,
 				DCF63D3A1A9543EC005E6C21 /* Nimble.framework in CopyFiles */,
-				DCF63D2C1A95382C005E6C21 /* LlamaKit.framework in CopyFiles */,
+				DC2B03C21AD7BF350000DBA2 /* Prelude.framework in CopyFiles */,
+				DC2B03C31AD7BF350000DBA2 /* Box.framework in CopyFiles */,
+				DC2B03C41AD7BF350000DBA2 /* Either.framework in CopyFiles */,
+				DC2B03C51AD7BF350000DBA2 /* Result.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,13 +88,24 @@
 			files = (
 				DCF63D3B1A9543F5005E6C21 /* Quick.framework in CopyFiles */,
 				DCF63D3C1A9543F5005E6C21 /* Nimble.framework in CopyFiles */,
-				DCF63D2E1A95390F005E6C21 /* LlamaKit.framework in CopyFiles */,
+				DC2B03B21AD7BF030000DBA2 /* Prelude.framework in CopyFiles */,
+				DC2B03B31AD7BF030000DBA2 /* Box.framework in CopyFiles */,
+				DC2B03B41AD7BF030000DBA2 /* Either.framework in CopyFiles */,
+				DC2B03B51AD7BF030000DBA2 /* Result.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC2B03A61AD7BE490000DBA2 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = "<group>"; };
+		DC2B03A71AD7BE490000DBA2 /* Either.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Either.framework; path = Carthage/Build/iOS/Either.framework; sourceTree = "<group>"; };
+		DC2B03A81AD7BE490000DBA2 /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prelude.framework; path = Carthage/Build/iOS/Prelude.framework; sourceTree = "<group>"; };
+		DC2B03A91AD7BE490000DBA2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		DC2B03B61AD7BF1D0000DBA2 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/Mac/Box.framework; sourceTree = "<group>"; };
+		DC2B03B71AD7BF1D0000DBA2 /* Either.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Either.framework; path = Carthage/Build/Mac/Either.framework; sourceTree = "<group>"; };
+		DC2B03B81AD7BF1D0000DBA2 /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prelude.framework; path = Carthage/Build/Mac/Prelude.framework; sourceTree = "<group>"; };
+		DC2B03B91AD7BF1D0000DBA2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		DC354FE21A952707009ACCFF /* ValueTransformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValueTransformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC354FE61A952707009ACCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC354FE71A952707009ACCFF /* ValueTransformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValueTransformer.h; sourceTree = "<group>"; };
@@ -93,8 +115,6 @@
 		DC3550031A952732009ACCFF /* ValueTransformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValueTransformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC35500D1A952732009ACCFF /* ValueTransformerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValueTransformerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC35501C1A95277E009ACCFF /* ValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueTransformer.swift; sourceTree = "<group>"; };
-		DC3550201A95294A009ACCFF /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = Carthage/Build/iOS/LlamaKit.framework; sourceTree = "<group>"; };
-		DC3550221A952955009ACCFF /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = Carthage/Build/Mac/LlamaKit.framework; sourceTree = "<group>"; };
 		DC3550271A952ADF009ACCFF /* ReversibleValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleValueTransformer.swift; sourceTree = "<group>"; };
 		DC35502A1A952B12009ACCFF /* ValueTransformerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueTransformerType.swift; sourceTree = "<group>"; };
 		DC35502D1A952B85009ACCFF /* ReversibleValueTransformerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleValueTransformerType.swift; sourceTree = "<group>"; };
@@ -111,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3550211A95294A009ACCFF /* LlamaKit.framework in Frameworks */,
+				DC2B03AD1AD7BE490000DBA2 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +141,7 @@
 			files = (
 				DCF63D321A954365005E6C21 /* Quick.framework in Frameworks */,
 				DCF63D311A954365005E6C21 /* Nimble.framework in Frameworks */,
+				DC2B03B11AD7BEFF0000DBA2 /* Result.framework in Frameworks */,
 				DC354FEE1A952707009ACCFF /* ValueTransformer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF63D261A953681005E6C21 /* LlamaKit.framework in Frameworks */,
+				DC2B03BD1AD7BF1D0000DBA2 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +160,7 @@
 			files = (
 				DCF63D361A954389005E6C21 /* Quick.framework in Frameworks */,
 				DCF63D351A954389005E6C21 /* Nimble.framework in Frameworks */,
+				DC2B03C11AD7BF330000DBA2 /* Result.framework in Frameworks */,
 				DC9A894F1A9535E0003C48B1 /* ValueTransformer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +243,10 @@
 			children = (
 				DCF63D341A954389005E6C21 /* Quick.framework */,
 				DCF63D331A954389005E6C21 /* Nimble.framework */,
-				DC3550221A952955009ACCFF /* LlamaKit.framework */,
+				DC2B03B81AD7BF1D0000DBA2 /* Prelude.framework */,
+				DC2B03B61AD7BF1D0000DBA2 /* Box.framework */,
+				DC2B03B71AD7BF1D0000DBA2 /* Either.framework */,
+				DC2B03B91AD7BF1D0000DBA2 /* Result.framework */,
 			);
 			name = Mac;
 			sourceTree = "<group>";
@@ -231,7 +256,10 @@
 			children = (
 				DCF63D301A954365005E6C21 /* Quick.framework */,
 				DCF63D2F1A954365005E6C21 /* Nimble.framework */,
-				DC3550201A95294A009ACCFF /* LlamaKit.framework */,
+				DC2B03A81AD7BE490000DBA2 /* Prelude.framework */,
+				DC2B03A61AD7BE490000DBA2 /* Box.framework */,
+				DC2B03A71AD7BE490000DBA2 /* Either.framework */,
+				DC2B03A91AD7BE490000DBA2 /* Result.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";

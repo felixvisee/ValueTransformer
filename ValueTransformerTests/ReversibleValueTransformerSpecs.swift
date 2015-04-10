@@ -3,7 +3,7 @@
 import Quick
 import Nimble
 
-import LlamaKit
+import Result
 import ValueTransformer
 
 struct ReversibleValueTransformers {
@@ -24,7 +24,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
             it("should fail if its value transformation fails") {
                 let result = valueTransformer.transform("1.5")
 
-                expect(result.isSuccess).to(beFalse())
+                expect(result.value).to(beNil())
             }
 
             it("should reverse transform a value") {
@@ -36,7 +36,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
             it("should fail if its reverse value transformation fails") {
                 let result = flip(valueTransformer).reverseTransform("2.5")
 
-                expect(result.isSuccess).to(beFalse())
+                expect(result.value).to(beNil())
             }
         }
 
@@ -52,7 +52,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
             it("should fail if its value transformation fails") {
                 let result = flip(valueTransformer).transform("3.5")
 
-                expect(result.isSuccess).to(beFalse())
+                expect(result.value).to(beNil())
             }
 
             it("should reverse transform a value") {
@@ -64,7 +64,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
             it("should fail if its reverse value transformation fails") {
                 let result = valueTransformer.reverseTransform("4.5")
 
-                expect(result.isSuccess).to(beFalse())
+                expect(result.value).to(beNil())
             }
         }
 
@@ -80,7 +80,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
             it("should fail if any of its value transformation fails") {
                 let result = valueTransformer.transform("3.5")
 
-                expect(result.isSuccess).to(beFalse())
+                expect(result.value).to(beNil())
             }
 
             it("should reverse transform a value") {
@@ -92,7 +92,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
             it("should fail if its reverse value transformation fails") {
                 let result = valueTransformer.reverseTransform("4.5")
 
-                expect(result.isSuccess).to(beFalse())
+                expect(result.value).to(beNil())
             }
         }
 
@@ -110,7 +110,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                     it("should fail if its value transformation fails") {
                         let result = valueTransformer.transform("5.5")
 
-                        expect(result.isSuccess).to(beFalse())
+                        expect(result.value).to(beNil())
                     }
                 }
 
@@ -131,7 +131,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                 it("should fail if its reverse value transformation fails") {
                     let result = flip(valueTransformer).reverseTransform("6.5")
 
-                    expect(result.isSuccess).to(beFalse())
+                    expect(result.value).to(beNil())
                 }
             }
 
@@ -147,7 +147,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                 it("should fail if its value transformation fails") {
                     let result = valueTransformer.transform("7.5")
 
-                    expect(result.isSuccess).to(beFalse())
+                    expect(result.value).to(beNil())
                 }
 
                 context("if given some transformed value") {
@@ -160,7 +160,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                     it("should fail if its value transformation fails") {
                         let result = flip(valueTransformer).reverseTransform("8.5")
 
-                        expect(result.isSuccess).to(beFalse())
+                        expect(result.value).to(beNil())
                     }
                 }
 
@@ -186,7 +186,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                     it("should fail if its value transformation fails") {
                         let result = valueTransformer.transform("9.5")
 
-                        expect(result.isSuccess).to(beFalse())
+                        expect(result.value).to(beNil())
                     }
                 }
 
@@ -208,7 +208,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                     it("should fail if its value transformation fails") {
                         let result = flip(valueTransformer).reverseTransform("10.5")
 
-                        expect(result.isSuccess).to(beFalse())
+                        expect(result.value).to(beNil())
                     }
                 }
 
@@ -233,7 +233,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                 it("should fail if any of its value transformation fails") {
                     let result = valueTransformer.transform([ "11", "12.5" ])
 
-                    expect(result.isSuccess).to(beFalse())
+                    expect(result.value).to(beNil())
                 }
 
                 it("should reverse transform a value") {
@@ -245,7 +245,7 @@ class ReversibleValueTransformerSpecs: QuickSpec {
                 it("should fail if its reverse value transformation fails") {
                     let result = flip(valueTransformer).reverseTransform([ "13", "14.5" ])
                     
-                    expect(result.isSuccess).to(beFalse())
+                    expect(result.value).to(beNil())
                 }
             }
         }

@@ -1,6 +1,6 @@
 //  Copyright (c) 2015 Felix Jendrusch. All rights reserved.
 
-import LlamaKit
+import Result
 
 public struct ValueTransformer<Value, TransformedValue, Error>: ValueTransformerType {
     private let transformClosure: Value -> Result<TransformedValue, Error>
@@ -50,7 +50,7 @@ public func lift<V: ValueTransformerType>(valueTransformer: V) -> ValueTransform
 
 public func lift<V: ValueTransformerType>(valueTransformer: V, #defaultTransformedValue: V.TransformedValueType) -> ValueTransformer<V.ValueType?, V.TransformedValueType, V.ErrorType> {
     return ValueTransformer { value in
-        return value.map(transform(valueTransformer)) ?? success(defaultTransformedValue)
+        return value.map(transform(valueTransformer)) ?? Result.success(defaultTransformedValue)
     }
 }
 

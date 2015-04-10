@@ -1,6 +1,6 @@
 //  Copyright (c) 2015 Felix Jendrusch. All rights reserved.
 
-import LlamaKit
+import Result
 
 public struct ReversibleValueTransformer<Value, TransformedValue, Error>: ReversibleValueTransformerType {
     private let transformClosure: Value -> Result<TransformedValue, Error>

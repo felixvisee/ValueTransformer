@@ -3,20 +3,20 @@
 import Quick
 import Nimble
 
-import LlamaKit
+import Result
 import ValueTransformer
 
 struct ValueTransformers {
     static let string: ValueTransformer<String, Int, NSError> = ValueTransformer { value in
         if let value = value.toInt() {
-            return success(value)
+            return Result.success(value)
         } else {
-            return failure(NSError())
+            return Result.failure(NSError())
         }
     }
 
     static let int: ValueTransformer<Int, String, NSError> = ValueTransformer { value in
-        return success(String(value))
+        return Result.success(String(value))
     }
 }
 
@@ -34,7 +34,7 @@ class ValueTransformerSpecs: QuickSpec {
             it("should fail if its value transformation fails") {
                 let result = valueTransformer.transform("2.5")
 
-                expect(result.isSuccess).to(beFalse())
+                expect(result.value).to(beNil())
             }
         }
 
@@ -50,7 +50,7 @@ class ValueTransformerSpecs: QuickSpec {
             it("should fail if any of its value transformation fails") {
                 let result = valueTransformer.transform("3.5")
 
-                expect(result.isSuccess).to(beFalse())
+                expect(result.value).to(beNil())
             }
         }
 
@@ -68,7 +68,7 @@ class ValueTransformerSpecs: QuickSpec {
                     it("should fail if its value transformation fails") {
                         let result = valueTransformer.transform("4.5")
 
-                        expect(result.isSuccess).to(beFalse())
+                        expect(result.value).to(beNil())
                     }
                 }
 
@@ -93,7 +93,7 @@ class ValueTransformerSpecs: QuickSpec {
                 it("should fail if its value transformation fails") {
                     let result = valueTransformer.transform("5.5")
 
-                    expect(result.isSuccess).to(beFalse())
+                    expect(result.value).to(beNil())
                 }
             }
 
@@ -110,7 +110,7 @@ class ValueTransformerSpecs: QuickSpec {
                     it("should fail if its value transformation fails") {
                         let result = valueTransformer.transform("6.5")
 
-                        expect(result.isSuccess).to(beFalse())
+                        expect(result.value).to(beNil())
                     }
                 }
 
@@ -135,7 +135,7 @@ class ValueTransformerSpecs: QuickSpec {
                 it("should fail if any of its value transformation fails") {
                     let result = valueTransformer.transform([ "9", "9.5" ])
 
-                    expect(result.isSuccess).to(beFalse())
+                    expect(result.value).to(beNil())
                 }
             }
         }

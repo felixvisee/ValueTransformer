@@ -1,21 +1,20 @@
 //  Copyright (c) 2015 Felix Jendrusch. All rights reserved.
 
-import LlamaKit
+import Result
 
 internal func unit<T>(x: T) -> T? {
     return .Some(x)
 }
 
 internal func map<S: SequenceType, T, E>(sequence: S, transform: (S.Generator.Element) -> Result<T, E>) -> Result<[T], E> {
-    var result: [T] = []
+    var result: Result<[T], E> = Result.success([])
     for element in sequence {
-        switch transform(element) {
-        case .Success(let value):
-            result.append(value.unbox)
-        case .Failure(let error):
-            return failure(error.unbox)
+        result = result.flatMap { result in
+            return transform(element).map { value in
+                return result + [ value ]
+            }
         }
     }
 
-    return success(result)
+    return result
 }

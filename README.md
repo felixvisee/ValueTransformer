@@ -133,4 +133,4 @@ let result2 = lifted.reverseTransform(nil) // "default"
 
 ## Error handling
 
-All transformations and reverse transformations return a [`LlamaKit.Result`](https://github.com/LlamaKit/LlamaKit/blob/master/LlamaKit/Result.swift), which either holds the (reverse) transformed value or an error. This enables you to gracefully handle transformation errors.
+All transformations and reverse transformations return a [`Result`](https://github.com/antitypical/Result/blob/master/Result/Result.swift), which either holds the (reverse) transformed value or an error. This enables you to gracefully handle transformation errors.

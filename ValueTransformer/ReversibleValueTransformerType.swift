@@ -1,6 +1,6 @@
 //  Copyright (c) 2015 Felix Jendrusch. All rights reserved.
 
-import LlamaKit
+import Result
 
 public protocol ReversibleValueTransformerType: ValueTransformerType {
     func reverseTransform(transformedValue: TransformedValueType) -> Result<ValueType, ErrorType>

@@ -11,7 +11,3 @@ public protocol ReversibleValueTransformerType: ValueTransformerType {
 public func reverseTransform<V: ReversibleValueTransformerType>(reversibleValueTransformer: V, transformedValue: V.TransformedValueType) -> Result<V.ValueType, V.ErrorType> {
     return reversibleValueTransformer.reverseTransform(transformedValue)
 }
-
-public func reverseTransform<V: ReversibleValueTransformerType>(reversibleValueTransformer: V)(transformedValue: V.TransformedValueType) -> Result<V.ValueType, V.ErrorType> {
-    return reversibleValueTransformer.reverseTransform(transformedValue)
-}

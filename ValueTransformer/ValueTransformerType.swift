@@ -15,7 +15,3 @@ public protocol ValueTransformerType {
 public func transform<V: ValueTransformerType>(valueTransformer: V, value: V.ValueType) -> Result<V.TransformedValueType, V.ErrorType> {
     return valueTransformer.transform(value)
 }
-
-public func transform<V: ValueTransformerType>(valueTransformer: V)(value: V.ValueType) -> Result<V.TransformedValueType, V.ErrorType> {
-    return valueTransformer.transform(value)
-}

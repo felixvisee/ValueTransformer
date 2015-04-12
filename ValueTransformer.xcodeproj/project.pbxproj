@@ -32,11 +32,13 @@
 		DC35502E1A952B85009ACCFF /* ReversibleValueTransformerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35502D1A952B85009ACCFF /* ReversibleValueTransformerType.swift */; };
 		DC35502F1A952B85009ACCFF /* ReversibleValueTransformerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC35502D1A952B85009ACCFF /* ReversibleValueTransformerType.swift */; };
 		DC3550321A95333A009ACCFF /* ValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC354FF41A952707009ACCFF /* ValueTransformerSpecs.swift */; };
-		DC6CC0271A97C0F00082E51E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0261A97C0F00082E51E /* Utils.swift */; };
-		DC6CC0281A97C0F00082E51E /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0261A97C0F00082E51E /* Utils.swift */; };
 		DC6CC02A1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */; };
 		DC6CC02B1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */; };
 		DC9A894F1A9535E0003C48B1 /* ValueTransformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3550031A952732009ACCFF /* ValueTransformer.framework */; };
+		DCB2E9EA1ADA9F0800084CF9 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03A81AD7BE490000DBA2 /* Prelude.framework */; };
+		DCB2E9EB1ADA9F1300084CF9 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03A81AD7BE490000DBA2 /* Prelude.framework */; };
+		DCB2E9EC1ADA9F2800084CF9 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03B81AD7BF1D0000DBA2 /* Prelude.framework */; };
+		DCB2E9ED1ADA9F3100084CF9 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03B81AD7BF1D0000DBA2 /* Prelude.framework */; };
 		DCF63D311A954365005E6C21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D2F1A954365005E6C21 /* Nimble.framework */; };
 		DCF63D321A954365005E6C21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D301A954365005E6C21 /* Quick.framework */; };
 		DCF63D351A954389005E6C21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D331A954389005E6C21 /* Nimble.framework */; };
@@ -118,7 +120,6 @@
 		DC3550271A952ADF009ACCFF /* ReversibleValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleValueTransformer.swift; sourceTree = "<group>"; };
 		DC35502A1A952B12009ACCFF /* ValueTransformerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueTransformerType.swift; sourceTree = "<group>"; };
 		DC35502D1A952B85009ACCFF /* ReversibleValueTransformerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleValueTransformerType.swift; sourceTree = "<group>"; };
-		DC6CC0261A97C0F00082E51E /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleValueTransformerSpecs.swift; sourceTree = "<group>"; };
 		DCF63D2F1A954365005E6C21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		DCF63D301A954365005E6C21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB2E9EA1ADA9F0800084CF9 /* Prelude.framework in Frameworks */,
 				DC2B03AD1AD7BE490000DBA2 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +143,7 @@
 			files = (
 				DCF63D321A954365005E6C21 /* Quick.framework in Frameworks */,
 				DCF63D311A954365005E6C21 /* Nimble.framework in Frameworks */,
+				DCB2E9EB1ADA9F1300084CF9 /* Prelude.framework in Frameworks */,
 				DC2B03B11AD7BEFF0000DBA2 /* Result.framework in Frameworks */,
 				DC354FEE1A952707009ACCFF /* ValueTransformer.framework in Frameworks */,
 			);
@@ -150,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB2E9EC1ADA9F2800084CF9 /* Prelude.framework in Frameworks */,
 				DC2B03BD1AD7BF1D0000DBA2 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +164,7 @@
 			files = (
 				DCF63D361A954389005E6C21 /* Quick.framework in Frameworks */,
 				DCF63D351A954389005E6C21 /* Nimble.framework in Frameworks */,
+				DCB2E9ED1ADA9F3100084CF9 /* Prelude.framework in Frameworks */,
 				DC2B03C11AD7BF330000DBA2 /* Result.framework in Frameworks */,
 				DC9A894F1A9535E0003C48B1 /* ValueTransformer.framework in Frameworks */,
 			);
@@ -194,7 +199,6 @@
 			children = (
 				DC3550271A952ADF009ACCFF /* ReversibleValueTransformer.swift */,
 				DC35502D1A952B85009ACCFF /* ReversibleValueTransformerType.swift */,
-				DC6CC0261A97C0F00082E51E /* Utils.swift */,
 				DC354FE71A952707009ACCFF /* ValueTransformer.h */,
 				DC35501C1A95277E009ACCFF /* ValueTransformer.swift */,
 				DC35502A1A952B12009ACCFF /* ValueTransformerType.swift */,
@@ -439,7 +443,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC6CC0271A97C0F00082E51E /* Utils.swift in Sources */,
 				DC35502E1A952B85009ACCFF /* ReversibleValueTransformerType.swift in Sources */,
 				DC3550281A952ADF009ACCFF /* ReversibleValueTransformer.swift in Sources */,
 				DC35502B1A952B12009ACCFF /* ValueTransformerType.swift in Sources */,
@@ -460,7 +463,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC6CC0281A97C0F00082E51E /* Utils.swift in Sources */,
 				DC35502F1A952B85009ACCFF /* ReversibleValueTransformerType.swift in Sources */,
 				DC3550291A952ADF009ACCFF /* ReversibleValueTransformer.swift in Sources */,
 				DC35502C1A952B12009ACCFF /* ValueTransformerType.swift in Sources */,

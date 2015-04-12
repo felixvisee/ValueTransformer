@@ -11,9 +11,9 @@ Type-safe value transformers with error handling, inspired by [Mantle 2.0's](htt
 1. Add ValueTransformer to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
 
   ```
-  github "felixjendrusch/ValueTransformer" ~> 1.0
+  github "felixjendrusch/ValueTransformer" ~> 2.0
   ```
-  
+
 2. Run `carthage update` to fetch and build ValueTransformer and its dependencies.
 
 3. [Make sure your application's target links against `ValueTransformer.framework` and copies all relevant frameworks into its application bundle (iOS); or embeds the binaries of all relevant frameworks (Mac).](https://github.com/carthage/carthage#getting-started)

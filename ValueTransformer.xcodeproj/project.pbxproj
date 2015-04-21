@@ -9,15 +9,9 @@
 /* Begin PBXBuildFile section */
 		DC2B03AD1AD7BE490000DBA2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03A91AD7BE490000DBA2 /* Result.framework */; };
 		DC2B03B11AD7BEFF0000DBA2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03A91AD7BE490000DBA2 /* Result.framework */; };
-		DC2B03B21AD7BF030000DBA2 /* Prelude.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03A81AD7BE490000DBA2 /* Prelude.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC2B03B31AD7BF030000DBA2 /* Box.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03A61AD7BE490000DBA2 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC2B03B41AD7BF030000DBA2 /* Either.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03A71AD7BE490000DBA2 /* Either.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC2B03B51AD7BF030000DBA2 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03A91AD7BE490000DBA2 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC2B03BD1AD7BF1D0000DBA2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03B91AD7BF1D0000DBA2 /* Result.framework */; };
 		DC2B03C11AD7BF330000DBA2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03B91AD7BF1D0000DBA2 /* Result.framework */; };
-		DC2B03C21AD7BF350000DBA2 /* Prelude.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03B81AD7BF1D0000DBA2 /* Prelude.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC2B03C31AD7BF350000DBA2 /* Box.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03B61AD7BF1D0000DBA2 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DC2B03C41AD7BF350000DBA2 /* Either.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03B71AD7BF1D0000DBA2 /* Either.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC2B03C51AD7BF350000DBA2 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DC2B03B91AD7BF1D0000DBA2 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DC354FE81A952707009ACCFF /* ValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = DC354FE71A952707009ACCFF /* ValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC354FEE1A952707009ACCFF /* ValueTransformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC354FE21A952707009ACCFF /* ValueTransformer.framework */; };
@@ -35,10 +29,6 @@
 		DC6CC02A1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */; };
 		DC6CC02B1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */; };
 		DC9A894F1A9535E0003C48B1 /* ValueTransformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3550031A952732009ACCFF /* ValueTransformer.framework */; };
-		DCB2E9EA1ADA9F0800084CF9 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03A81AD7BE490000DBA2 /* Prelude.framework */; };
-		DCB2E9EB1ADA9F1300084CF9 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03A81AD7BE490000DBA2 /* Prelude.framework */; };
-		DCB2E9EC1ADA9F2800084CF9 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03B81AD7BF1D0000DBA2 /* Prelude.framework */; };
-		DCB2E9ED1ADA9F3100084CF9 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2B03B81AD7BF1D0000DBA2 /* Prelude.framework */; };
 		DCF63D311A954365005E6C21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D2F1A954365005E6C21 /* Nimble.framework */; };
 		DCF63D321A954365005E6C21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D301A954365005E6C21 /* Quick.framework */; };
 		DCF63D351A954389005E6C21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D331A954389005E6C21 /* Nimble.framework */; };
@@ -75,9 +65,6 @@
 			files = (
 				DCF63D391A9543EC005E6C21 /* Quick.framework in CopyFiles */,
 				DCF63D3A1A9543EC005E6C21 /* Nimble.framework in CopyFiles */,
-				DC2B03C21AD7BF350000DBA2 /* Prelude.framework in CopyFiles */,
-				DC2B03C31AD7BF350000DBA2 /* Box.framework in CopyFiles */,
-				DC2B03C41AD7BF350000DBA2 /* Either.framework in CopyFiles */,
 				DC2B03C51AD7BF350000DBA2 /* Result.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,9 +77,6 @@
 			files = (
 				DCF63D3B1A9543F5005E6C21 /* Quick.framework in CopyFiles */,
 				DCF63D3C1A9543F5005E6C21 /* Nimble.framework in CopyFiles */,
-				DC2B03B21AD7BF030000DBA2 /* Prelude.framework in CopyFiles */,
-				DC2B03B31AD7BF030000DBA2 /* Box.framework in CopyFiles */,
-				DC2B03B41AD7BF030000DBA2 /* Either.framework in CopyFiles */,
 				DC2B03B51AD7BF030000DBA2 /* Result.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,13 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DC2B03A61AD7BE490000DBA2 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = "<group>"; };
-		DC2B03A71AD7BE490000DBA2 /* Either.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Either.framework; path = Carthage/Build/iOS/Either.framework; sourceTree = "<group>"; };
-		DC2B03A81AD7BE490000DBA2 /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prelude.framework; path = Carthage/Build/iOS/Prelude.framework; sourceTree = "<group>"; };
 		DC2B03A91AD7BE490000DBA2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		DC2B03B61AD7BF1D0000DBA2 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/Mac/Box.framework; sourceTree = "<group>"; };
-		DC2B03B71AD7BF1D0000DBA2 /* Either.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Either.framework; path = Carthage/Build/Mac/Either.framework; sourceTree = "<group>"; };
-		DC2B03B81AD7BF1D0000DBA2 /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prelude.framework; path = Carthage/Build/Mac/Prelude.framework; sourceTree = "<group>"; };
 		DC2B03B91AD7BF1D0000DBA2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		DC354FE21A952707009ACCFF /* ValueTransformer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValueTransformer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC354FE61A952707009ACCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,7 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCB2E9EA1ADA9F0800084CF9 /* Prelude.framework in Frameworks */,
 				DC2B03AD1AD7BE490000DBA2 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,7 +120,6 @@
 			files = (
 				DCF63D321A954365005E6C21 /* Quick.framework in Frameworks */,
 				DCF63D311A954365005E6C21 /* Nimble.framework in Frameworks */,
-				DCB2E9EB1ADA9F1300084CF9 /* Prelude.framework in Frameworks */,
 				DC2B03B11AD7BEFF0000DBA2 /* Result.framework in Frameworks */,
 				DC354FEE1A952707009ACCFF /* ValueTransformer.framework in Frameworks */,
 			);
@@ -153,7 +129,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCB2E9EC1ADA9F2800084CF9 /* Prelude.framework in Frameworks */,
 				DC2B03BD1AD7BF1D0000DBA2 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,7 +139,6 @@
 			files = (
 				DCF63D361A954389005E6C21 /* Quick.framework in Frameworks */,
 				DCF63D351A954389005E6C21 /* Nimble.framework in Frameworks */,
-				DCB2E9ED1ADA9F3100084CF9 /* Prelude.framework in Frameworks */,
 				DC2B03C11AD7BF330000DBA2 /* Result.framework in Frameworks */,
 				DC9A894F1A9535E0003C48B1 /* ValueTransformer.framework in Frameworks */,
 			);
@@ -247,9 +221,6 @@
 			children = (
 				DCF63D341A954389005E6C21 /* Quick.framework */,
 				DCF63D331A954389005E6C21 /* Nimble.framework */,
-				DC2B03B81AD7BF1D0000DBA2 /* Prelude.framework */,
-				DC2B03B61AD7BF1D0000DBA2 /* Box.framework */,
-				DC2B03B71AD7BF1D0000DBA2 /* Either.framework */,
 				DC2B03B91AD7BF1D0000DBA2 /* Result.framework */,
 			);
 			name = Mac;
@@ -260,9 +231,6 @@
 			children = (
 				DCF63D301A954365005E6C21 /* Quick.framework */,
 				DCF63D2F1A954365005E6C21 /* Nimble.framework */,
-				DC2B03A81AD7BE490000DBA2 /* Prelude.framework */,
-				DC2B03A61AD7BE490000DBA2 /* Box.framework */,
-				DC2B03A71AD7BE490000DBA2 /* Either.framework */,
 				DC2B03A91AD7BE490000DBA2 /* Result.framework */,
 			);
 			name = iOS;

@@ -1,6 +1,5 @@
 //  Copyright (c) 2015 Felix Jendrusch. All rights reserved.
 
-import Prelude
 import Result
 
 public struct ReversibleValueTransformer<Value, TransformedValue, Error>: ReversibleValueTransformerType {
@@ -24,13 +23,13 @@ public struct ReversibleValueTransformer<Value, TransformedValue, Error>: Revers
 // MARK: - Combine
 
 public func combine<V: ValueTransformerType, W: ValueTransformerType where V.ValueType == W.TransformedValueType, V.TransformedValueType == W.ValueType, V.ErrorType == W.ErrorType>(valueTransformer: V, reverseValueTransformer: W) -> ReversibleValueTransformer<V.ValueType, V.TransformedValueType, V.ErrorType> {
-    return ReversibleValueTransformer(transformClosure: curry(transform)(valueTransformer), reverseTransformClosure: curry(transform)(reverseValueTransformer))
+    return ReversibleValueTransformer(transformClosure: transform(valueTransformer), reverseTransformClosure: transform(reverseValueTransformer))
 }
 
 // MARK: - Flip
 
 public func flip<V: ReversibleValueTransformerType>(reversibleValueTransformer: V) -> ReversibleValueTransformer<V.TransformedValueType, V.ValueType, V.ErrorType> {
-    return ReversibleValueTransformer(transformClosure: curry(reverseTransform)(reversibleValueTransformer), reverseTransformClosure: curry(transform)(reversibleValueTransformer))
+    return ReversibleValueTransformer(transformClosure: reverseTransform(reversibleValueTransformer), reverseTransformClosure: transform(reversibleValueTransformer))
 }
 
 // MARK: - Compose

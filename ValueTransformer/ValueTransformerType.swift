@@ -12,6 +12,11 @@ public protocol ValueTransformerType {
 
 // MARK: - Basics
 
+@availability(*, introduced=1.0, deprecated=2.1, message="Use either `valueTransformer.transform(value)` or `transform(valueTransformer)(value)`.")
 public func transform<V: ValueTransformerType>(valueTransformer: V, value: V.ValueType) -> Result<V.TransformedValueType, V.ErrorType> {
+    return valueTransformer.transform(value)
+}
+
+public func transform<V: ValueTransformerType>(valueTransformer: V)(value: V.ValueType) -> Result<V.TransformedValueType, V.ErrorType> {
     return valueTransformer.transform(value)
 }

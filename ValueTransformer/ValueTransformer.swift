@@ -1,6 +1,5 @@
 //  Copyright (c) 2015 Felix Jendrusch. All rights reserved.
 
-import Prelude
 import Result
 
 public struct ValueTransformer<Value, TransformedValue, Error>: ValueTransformerType {
@@ -19,7 +18,7 @@ public struct ValueTransformer<Value, TransformedValue, Error>: ValueTransformer
 
 public func compose<V: ValueTransformerType, W: ValueTransformerType where V.TransformedValueType == W.ValueType, V.ErrorType == W.ErrorType>(left: V, right: W) -> ValueTransformer<V.ValueType, W.TransformedValueType, W.ErrorType> {
     return ValueTransformer { value in
-        return left.transform(value).flatMap(curry(transform)(right))
+        return left.transform(value).flatMap(transform(right))
     }
 }
 
@@ -51,7 +50,7 @@ public func lift<V: ValueTransformerType>(valueTransformer: V) -> ValueTransform
 
 public func lift<V: ValueTransformerType>(valueTransformer: V, #defaultTransformedValue: V.TransformedValueType) -> ValueTransformer<V.ValueType?, V.TransformedValueType, V.ErrorType> {
     return ValueTransformer { value in
-        return map(value, curry(transform)(valueTransformer)) ?? Result.success(defaultTransformedValue)
+        return map(value, transform(valueTransformer)) ?? Result.success(defaultTransformedValue)
     }
 }
 

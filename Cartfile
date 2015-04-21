@@ -1,2 +1,1 @@
-# github "antitypical/Result" ~> 0.1
-github "felixjendrusch/Result" "xcodeproj-only"
+github "antitypical/Result" ~> 0.3

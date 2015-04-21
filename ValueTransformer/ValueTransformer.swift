@@ -44,7 +44,9 @@ public func <<< <V: ValueTransformerType, W: ValueTransformerType where V.ValueT
 
 public func lift<V: ValueTransformerType>(valueTransformer: V) -> ValueTransformer<V.ValueType, V.TransformedValueType?, V.ErrorType> {
     return ValueTransformer { value in
-        return valueTransformer.transform(value).map(unit)
+        return valueTransformer.transform(value).map { value in
+            return .Some(value)
+        }
     }
 }
 

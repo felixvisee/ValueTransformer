@@ -7,7 +7,7 @@ import Result
 import ValueTransformer
 
 struct ValueTransformers {
-    static let string: ValueTransformer<String, Int, NSError> = ValueTransformer { value in
+    static let string = ValueTransformer<String, Int, NSError> { value in
         if let value = value.toInt() {
             return Result.success(value)
         } else {
@@ -15,7 +15,7 @@ struct ValueTransformers {
         }
     }
 
-    static let int: ValueTransformer<Int, String, NSError> = ValueTransformer { value in
+    static let int = ValueTransformer<Int, String, NSError> { value in
         return Result.success(String(value))
     }
 }

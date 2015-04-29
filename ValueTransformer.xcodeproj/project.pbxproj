@@ -29,6 +29,8 @@
 		DC6CC02A1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */; };
 		DC6CC02B1A9A32030082E51E /* ReversibleValueTransformerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */; };
 		DC9A894F1A9535E0003C48B1 /* ValueTransformer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC3550031A952732009ACCFF /* ValueTransformer.framework */; };
+		DCE95F641AF19E4C00E35127 /* Box.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCE95F601AF19E3000E35127 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DCE95F651AF19E5B00E35127 /* Box.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCE95F611AF19E3800E35127 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DCF63D311A954365005E6C21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D2F1A954365005E6C21 /* Nimble.framework */; };
 		DCF63D321A954365005E6C21 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D301A954365005E6C21 /* Quick.framework */; };
 		DCF63D351A954389005E6C21 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF63D331A954389005E6C21 /* Nimble.framework */; };
@@ -65,6 +67,7 @@
 			files = (
 				DCF63D391A9543EC005E6C21 /* Quick.framework in CopyFiles */,
 				DCF63D3A1A9543EC005E6C21 /* Nimble.framework in CopyFiles */,
+				DCE95F651AF19E5B00E35127 /* Box.framework in CopyFiles */,
 				DC2B03C51AD7BF350000DBA2 /* Result.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +80,7 @@
 			files = (
 				DCF63D3B1A9543F5005E6C21 /* Quick.framework in CopyFiles */,
 				DCF63D3C1A9543F5005E6C21 /* Nimble.framework in CopyFiles */,
+				DCE95F641AF19E4C00E35127 /* Box.framework in CopyFiles */,
 				DC2B03B51AD7BF030000DBA2 /* Result.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +103,8 @@
 		DC35502A1A952B12009ACCFF /* ValueTransformerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueTransformerType.swift; sourceTree = "<group>"; };
 		DC35502D1A952B85009ACCFF /* ReversibleValueTransformerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleValueTransformerType.swift; sourceTree = "<group>"; };
 		DC6CC0291A9A32030082E51E /* ReversibleValueTransformerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReversibleValueTransformerSpecs.swift; sourceTree = "<group>"; };
+		DCE95F601AF19E3000E35127 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = "<group>"; };
+		DCE95F611AF19E3800E35127 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/Mac/Box.framework; sourceTree = "<group>"; };
 		DCF63D2F1A954365005E6C21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		DCF63D301A954365005E6C21 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		DCF63D331A954389005E6C21 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
@@ -221,6 +227,7 @@
 			children = (
 				DCF63D341A954389005E6C21 /* Quick.framework */,
 				DCF63D331A954389005E6C21 /* Nimble.framework */,
+				DCE95F611AF19E3800E35127 /* Box.framework */,
 				DC2B03B91AD7BF1D0000DBA2 /* Result.framework */,
 			);
 			name = Mac;
@@ -231,6 +238,7 @@
 			children = (
 				DCF63D301A954365005E6C21 /* Quick.framework */,
 				DCF63D2F1A954365005E6C21 /* Nimble.framework */,
+				DCE95F601AF19E3000E35127 /* Box.framework */,
 				DC2B03A91AD7BE490000DBA2 /* Result.framework */,
 			);
 			name = iOS;

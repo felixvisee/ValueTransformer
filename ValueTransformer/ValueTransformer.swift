@@ -14,6 +14,14 @@ public struct ValueTransformer<Value, TransformedValue, Error>: ValueTransformer
     }
 }
 
+extension ValueTransformer {
+    public init<V: ValueTransformerType where V.ValueType == Value, V.TransformedValueType == TransformedValue, V.ErrorType == Error>(_ valueTransformer: V) {
+        self.init(transformClosure: { value in
+            return valueTransformer.transform(value)
+        })
+    }
+}
+
 // MARK: - Compose
 
 public func compose<V: ValueTransformerType, W: ValueTransformerType where V.TransformedValueType == W.ValueType, V.ErrorType == W.ErrorType>(left: V, right: W) -> ValueTransformer<V.ValueType, W.TransformedValueType, W.ErrorType> {

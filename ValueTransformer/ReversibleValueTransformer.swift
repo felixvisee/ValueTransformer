@@ -20,6 +20,16 @@ public struct ReversibleValueTransformer<Value, TransformedValue, Error>: Revers
     }
 }
 
+extension ReversibleValueTransformer {
+    public init<V: ReversibleValueTransformerType where V.ValueType == Value, V.TransformedValueType == TransformedValue, V.ErrorType == Error>(_ reversibleValueTransformer: V) {
+        self.init(transformClosure: { value in
+            return reversibleValueTransformer.transform(value)
+        }, reverseTransformClosure: { transformedValue in
+            return reversibleValueTransformer.reverseTransform(transformedValue)
+        })
+    }
+}
+
 // MARK: - Combine
 
 public func combine<V: ValueTransformerType, W: ValueTransformerType where V.ValueType == W.TransformedValueType, V.TransformedValueType == W.ValueType, V.ErrorType == W.ErrorType>(valueTransformer: V, reverseValueTransformer: W) -> ReversibleValueTransformer<V.ValueType, V.TransformedValueType, V.ErrorType> {

@@ -13,6 +13,8 @@ public func reverseTransform<V: ReversibleValueTransformerType>(reversibleValueT
     return reversibleValueTransformer.reverseTransform(transformedValue)
 }
 
-public func reverseTransform<V: ReversibleValueTransformerType>(reversibleValueTransformer: V)(transformedValue: V.TransformedValueType) -> Result<V.ValueType, V.ErrorType> {
-    return reversibleValueTransformer.reverseTransform(transformedValue)
+public func reverseTransform<V: ReversibleValueTransformerType>(reversibleValueTransformer: V) -> V.TransformedValueType -> Result<V.ValueType, V.ErrorType> {
+    return { transformedValue in
+        return reversibleValueTransformer.reverseTransform(transformedValue)
+    }
 }

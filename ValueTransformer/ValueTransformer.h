@@ -1,6 +1,6 @@
 //  Copyright (c) 2015 Felix Jendrusch. All rights reserved.
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 //! Project version number for ValueTransformer.
 FOUNDATION_EXPORT double ValueTransformerVersionNumber;

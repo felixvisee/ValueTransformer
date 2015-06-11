@@ -24,7 +24,7 @@ extension ValueTransformer {
 
 // MARK: - Compose
 
-public func compose<V: ValueTransformerType, W: ValueTransformerType where V.TransformedValueType == W.ValueType, V.ErrorType == W.ErrorType>(left: V, right: W) -> ValueTransformer<V.ValueType, W.TransformedValueType, W.ErrorType> {
+public func compose<V: ValueTransformerType, W: ValueTransformerType where V.TransformedValueType == W.ValueType, V.ErrorType == W.ErrorType>(left: V, _ right: W) -> ValueTransformer<V.ValueType, W.TransformedValueType, W.ErrorType> {
     return ValueTransformer { value in
         return left.transform(value).flatMap(transform(right))
     }
@@ -58,9 +58,9 @@ public func lift<V: ValueTransformerType>(valueTransformer: V) -> ValueTransform
     }
 }
 
-public func lift<V: ValueTransformerType>(valueTransformer: V, #defaultTransformedValue: V.TransformedValueType) -> ValueTransformer<V.ValueType?, V.TransformedValueType, V.ErrorType> {
+public func lift<V: ValueTransformerType>(valueTransformer: V, defaultTransformedValue: V.TransformedValueType) -> ValueTransformer<V.ValueType?, V.TransformedValueType, V.ErrorType> {
     return ValueTransformer { value in
-        return map(value, transform(valueTransformer)) ?? Result.success(defaultTransformedValue)
+        return value.map(transform(valueTransformer)) ?? Result.success(defaultTransformedValue)
     }
 }
 
@@ -72,7 +72,7 @@ public func lift<V: ValueTransformerType>(valueTransformer: V) -> ValueTransform
 
 public func lift<V: ValueTransformerType>(valueTransformer: V) -> ValueTransformer<[V.ValueType], [V.TransformedValueType], V.ErrorType> {
     return ValueTransformer { values in
-        return reduce(values, Result.success([])) { (result, value) in
+        return values.reduce(Result.success([])) { (result, value) in
             return result.flatMap { result in
                 return valueTransformer.transform(value).map { value in
                     return result + [ value ]

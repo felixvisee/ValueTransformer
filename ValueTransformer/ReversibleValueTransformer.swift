@@ -32,7 +32,7 @@ extension ReversibleValueTransformer {
 
 // MARK: - Combine
 
-public func combine<V: ValueTransformerType, W: ValueTransformerType where V.ValueType == W.TransformedValueType, V.TransformedValueType == W.ValueType, V.ErrorType == W.ErrorType>(valueTransformer: V, reverseValueTransformer: W) -> ReversibleValueTransformer<V.ValueType, V.TransformedValueType, V.ErrorType> {
+public func combine<V: ValueTransformerType, W: ValueTransformerType where V.ValueType == W.TransformedValueType, V.TransformedValueType == W.ValueType, V.ErrorType == W.ErrorType>(valueTransformer: V, _ reverseValueTransformer: W) -> ReversibleValueTransformer<V.ValueType, V.TransformedValueType, V.ErrorType> {
     return ReversibleValueTransformer(transformClosure: transform(valueTransformer), reverseTransformClosure: transform(reverseValueTransformer))
 }
 
@@ -44,7 +44,7 @@ public func flip<V: ReversibleValueTransformerType>(reversibleValueTransformer: 
 
 // MARK: - Compose
 
-public func compose<V: ReversibleValueTransformerType, W: ReversibleValueTransformerType where V.TransformedValueType == W.ValueType, V.ErrorType == W.ErrorType>(left: V, right: W) -> ReversibleValueTransformer<V.ValueType, W.TransformedValueType, W.ErrorType> {
+public func compose<V: ReversibleValueTransformerType, W: ReversibleValueTransformerType where V.TransformedValueType == W.ValueType, V.ErrorType == W.ErrorType>(left: V, _ right: W) -> ReversibleValueTransformer<V.ValueType, W.TransformedValueType, W.ErrorType> {
     return combine(left >>> right as ValueTransformer, flip(right) >>> flip(left) as ValueTransformer)
 }
 
@@ -68,11 +68,11 @@ public func <<< <V: ReversibleValueTransformerType, W: ReversibleValueTransforme
 
 // MARK: - Lift (Optional)
 
-public func lift<V: ReversibleValueTransformerType>(reversibleValueTransformer: V, #defaultReverseTransformedValue: V.ValueType) -> ReversibleValueTransformer<V.ValueType, V.TransformedValueType?, V.ErrorType> {
+public func lift<V: ReversibleValueTransformerType>(reversibleValueTransformer: V, defaultReverseTransformedValue: V.ValueType) -> ReversibleValueTransformer<V.ValueType, V.TransformedValueType?, V.ErrorType> {
     return combine(lift(reversibleValueTransformer) as ValueTransformer, lift(flip(reversibleValueTransformer), defaultTransformedValue: defaultReverseTransformedValue) as ValueTransformer)
 }
 
-public func lift<V: ReversibleValueTransformerType>(reversibleValueTransformer: V, #defaultTransformedValue: V.TransformedValueType) -> ReversibleValueTransformer<V.ValueType?, V.TransformedValueType, V.ErrorType> {
+public func lift<V: ReversibleValueTransformerType>(reversibleValueTransformer: V, defaultTransformedValue: V.TransformedValueType) -> ReversibleValueTransformer<V.ValueType?, V.TransformedValueType, V.ErrorType> {
     return combine(lift(reversibleValueTransformer, defaultTransformedValue: defaultTransformedValue) as ValueTransformer, lift(flip(reversibleValueTransformer)) as ValueTransformer)
 }
 

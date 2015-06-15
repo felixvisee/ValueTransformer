@@ -8,10 +8,10 @@ import ValueTransformer
 
 struct ValueTransformers {
     static let string = ValueTransformer<String, Int, NSError> { value in
-        if let value = value.toInt() {
+        if let value = Int(value) {
             return Result.success(value)
         } else {
-            return Result.failure(NSError())
+            return Result.failure(NSError(domain: "ValueTransformer", code: 0, userInfo: nil))
         }
     }
 

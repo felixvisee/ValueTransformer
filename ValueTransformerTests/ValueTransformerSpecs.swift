@@ -9,14 +9,14 @@ import ValueTransformer
 struct ValueTransformers {
     static let string = ValueTransformer<String, Int, NSError> { value in
         if let value = Int(value) {
-            return Result.success(value)
+            return Result.Success(value)
         } else {
-            return Result.failure(NSError(domain: "ValueTransformer", code: 0, userInfo: nil))
+            return Result.Failure(NSError(domain: "ValueTransformer", code: 0, userInfo: nil))
         }
     }
 
     static let int = ValueTransformer<Int, String, NSError> { value in
-        return Result.success(String(value))
+        return Result.Success(String(value))
     }
 }
 
